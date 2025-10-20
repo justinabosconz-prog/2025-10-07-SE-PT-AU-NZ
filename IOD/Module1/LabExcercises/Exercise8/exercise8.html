@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>devsInc TableTop Dice Generator</title>
     <link rel="stylesheet" href="exercise8.css" />
+    <script>
+      function rollaDice() {
+        document.getElementById("output").innerHTML = Math.floor(Math.random() * 6) + 1
+      }
+    </script>
   </head>
   <body>
     <h1>Welcome to the TableTop Dice Generator Project Page</h1>
@@ -16,9 +21,9 @@
       <h1>Dice Roller</h1>
       <label># of Dice:</label>
       <input type="number" id="numOfDice" value="1" min="1">
-      <button onclick="rollDice()"> Roll Dice</button>
-      <script>document.getElementById("numOfDice").innerHTML = Math.floor((Math.random() * 6) + 1);</script>
-      <div id="diceResult"></div>
-      <div id="diceImages"></div>
+      <button onclick="rollaDice()"> Roll Dice</button>
+      <p>
+        <label id="output"></label>
+      </p>>
   </body>
 </html>
