@@ -1,0 +1,40 @@
+p {
+  border: 5px solid black;
+  background-color: gold;
+  color: red;
+  font-size: 20px;
+}
+body {
+  background-color: rgb(237, 230, 230);
+}
+div {
+  padding-top: 100px;
+}
+h1 {
+  background-color: aqua;
+}
+.select {
+  font-size: large;
+}
+#container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+button {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(210, 100%, 50%);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+input {
+  font-size: 2rem;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+}
