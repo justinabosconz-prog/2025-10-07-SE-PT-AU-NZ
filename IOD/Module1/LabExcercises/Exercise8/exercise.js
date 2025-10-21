@@ -1,3 +1,6 @@
+// I tried various methods but failed //
+// I finally took help but couldn't figure out myself //
+
 function rollDice() {
   const numOfDice = document.getElementById("numOfDice").value;
   const diceResult = document.getElementById("diceResult");

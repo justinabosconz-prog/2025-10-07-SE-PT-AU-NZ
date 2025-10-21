@@ -6,24 +6,38 @@
     <title>devsInc TableTop Dice Generator</title>
     <link rel="stylesheet" href="exercise8.css" />
     <script>
-      function rollaDice() {
-        document.getElementById("output").innerHTML = Math.floor(Math.random() * 6) + 1
+      function rollaDice6() {
+        document.getElementById("output6").innerHTML =
+          Math.floor(Math.random() * 6) + 1;
+      }
+      function rollaDice10() {
+        document.getElementById("output10").innerHTML =
+          Math.floor(Math.random() * 10) + 1;
       }
     </script>
   </head>
   <body>
     <h1>Welcome to the TableTop Dice Generator Project Page</h1>
     <h2>This website is designed by <i>Justina Bosco</i></h2>
-    <div id= "container" style="padding-top: 20px">
+    <div id="container" style="padding-top: 20px">
       <p>
-        Please select the dice structure you want to play with. Enter a number...
+        Please select the dice structure you want to play with. Enter a
+        number...
       </p>
-      <h1>Dice Roller</h1>
-      <label># of Dice:</label>
-      <input type="number" id="numOfDice" value="1" min="1">
-      <button onclick="rollaDice()"> Roll Dice</button>
+    </div>
+    <div class="column" id="container">
+      <h1>6 faced Dice Roller</h1>
+      <button onclick="rollaDice6()">Roll Dice</button>
       <p>
-        <label id="output"></label>
-      </p>>
+        <label id="output6"></label>
+      </p>
+    </div>
+    <div class="column" id="container">
+      <h1>10 faced Dice Roller</h1>
+      <button onclick="rollaDice10()">Roll Dice</button>
+      <p>
+        <label id="output10"></label>
+      </p>
+    </div>
   </body>
 </html>
