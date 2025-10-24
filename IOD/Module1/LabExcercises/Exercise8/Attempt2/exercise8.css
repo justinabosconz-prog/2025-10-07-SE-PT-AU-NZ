@@ -1,0 +1,31 @@
+header {
+  background-color: rgb(54, 189, 182);
+  color: rgb(0, 10, 105);
+  font-size: larger;
+}
+body {
+  background-color: black;
+  color: white;
+  font-size: larger;
+}
+p {
+  margin-top: 100px;
+  font-size: larger;
+}
+select {
+  font-size: larger;
+  margin-top: 100px;
+}
+label {
+  color: aqua;
+}
+#diceValue {
+  color: aqua;
+}
+img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}

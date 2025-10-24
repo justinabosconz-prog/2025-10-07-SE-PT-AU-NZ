@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devsInc Tabletop Dice roller</title>
+    <link rel="icon" type="image/x-icon" href="devsInc_logo.jpeg">
+    <link rel="stylesheet" href="exercise8.css"></link>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the devsInc Dice Roller Website.</h1>
+      <h3>This website is designed by Carol Bosco and Justina Bosco!</h3>
+      <h5>&#169 Carol Bosco chose the colors and Justina Bosco did the coding!!</h5>
+    </header>
+    <main>
+      <section>
+        <div>
+          <p>
+           To start playing, select the number of faces you want for your dice. The
+           options are between 6 and 10.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <select onchange="RollDice()" id="diceFace">
+            <option>Select a number</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+         </select>
+        </div>
+        <div>
+          <p>
+            <label id="diceValue">
+             The value will display here.
+           </label>
+         </p>
+       </div>
+      </section>
+      <section>
+        <div>
+         <img src="devsInc_logo.jpeg" alt="devsInc_logo">
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="exercise.js"></script>
+</html>
