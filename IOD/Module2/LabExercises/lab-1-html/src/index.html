@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Added the meta tags below-->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This webpage is showcasing the work related to Lab Exercise 1 from Module 2"
+    />
+    <meta
+      name="keywords"
+      content="Module 2, Lab Exercise 1, IOD Exercises, HTML tags"
+    />
+    <meta name="author" content="Justina Bosco" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Exercise 1</title>
+    <style>
+      th,
+      td {
+        border: 1px solid black;
+      }
+      article {
+        background-color: rgb(242, 237, 238);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <!--/ did not work so I added the full path-->
+        <a href="index.html">Home</a>
+        <a href="form.html">Form HTML page</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>My HTML learning journey</h1>
+      <!--The headings above and below look identical to me-->
+      <article class="Learning about article">
+        <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+        <section>
+          <!--I observe that div falls to the next line whereas span remains in the same line -->
+          <div>My name is Justina.</div>
+          <div>I work in MBIE.</div>
+          <div>I study Software Engineering in IOD.</div>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </section>
+        <section>
+          <!--Unlike the p tag, pre tag lets me keep the spacing and line break as is-->
+          <p>p represents paragraph without preserving spacing</p>
+          <pre>
+Text in         a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre
+          >
+        </section>
+        <section>
+          <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>
+              Kiwi
+              <ul>
+                <li>Green Kiwi</li>
+                <li>Yellow Kiwi</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ol>
+            <li>Pizza</li>
+            <li>Burger</li>
+            <li>Fries</li>
+            <li>Coke</li>
+          </ol>
+        </section>
+      </article>
+      <article class="Learning about table">
+        <h2>Learning elements - table, thead, tbody, tr, td, th</h2>
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>First header</th>
+                <th colspan="2">Second header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>First cell - first row</td>
+                <td>Second cell - first row</td>
+                <td>Third cell - first row</td>
+              </tr>
+              <tr>
+                <td rowspan="2">First cell - second third row</td>
+                <td>Second cell - second row</td>
+                <td>Third cell - second row</td>
+              </tr>
+              <tr>
+                <td>Second cell - third row</td>
+                <td>Second cell - third row</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+      <article>
+        <h2>Learning elements - img, video, audio</h2>
+        <img
+          src="https://picsum.photos/400/400"
+          alt="a random image"
+          height="400px"
+          width="400px"
+        />
+        <img
+          src="./assets/html_lab_image.jpg"
+          alt="unable to display the image"
+          height="400px"
+          width="400px"
+        />
+        <div>
+          <video autoplay width="250">
+            <source src="/assets/flower.webm" type="video/webm" />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+          <figure>
+            <figcaption>This is an audio file</figcaption>
+            <audio autoplay>
+              <source src="/assets/t-rex-roar.mp3" type="audio/mp3" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </figure>
+        </div>
+      </article>
+      <article>
+        <h2>Learning elements - form, input, label, select, option, button</h2>
+        <form method="POST" action="http://127.0.0.1:5500/form.html">
+          <div>
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+          <div>
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" />
+          </div>
+          <div>
+            <label>Favorite Coding language</label>
+            <input type="radio" id="JS" name="favCodLang" value="JavaScript" />
+            <label for="JS">JavaScript</label>
+            <input type="radio" id="PY" name="favCodLang" value="Python" />
+            <label for="PY">Python</label>
+            <input type="radio" id="R" name="favCodLang" value="R" />
+            <label for="R">R</label>
+          </div>
+          <div>
+            <label>Select the vehicle you own</label>
+            <input type="checkbox" id="Car" name="vehicle" value="Car" />
+            <label>Car</label>
+            <input type="checkbox" id="Bike" name="vehicle" value="Bike" />
+            <label>Bike</label>
+            <input type="checkbox" id="Cycle" name="vehicle" value="Cycle" />
+            <label>Cycle</label>
+          </div>
+          <div>
+            <label for="carBrand">Choose the car brand you own:</label>
+            <select id="carBrand" name="carBrand">
+              <option value="Suzuki">Suzuki</option>
+              <option value="BMW">BMW</option>
+              <option value="Fiat">Fiat</option>
+            </select>
+          </div>
+          <button type="submit">Submit form</button>
+        </form>
+      </article>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>
