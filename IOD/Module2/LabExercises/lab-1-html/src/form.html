@@ -11,7 +11,47 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <h2>Learning elements - form, input, label, select, option, button</h2>
+      <!--optional exercise done-->
+      <form method="POST" action="http://localhost:3000/profile">
+        <div>
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div>
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
+        <div>
+          <label>Favorite Coding language</label>
+          <input type="radio" id="JS" name="favCodLang" value="JavaScript" />
+          <label for="JS">JavaScript</label>
+          <input type="radio" id="PY" name="favCodLang" value="Python" />
+          <label for="PY">Python</label>
+          <input type="radio" id="R" name="favCodLang" value="R" />
+          <label for="R">R</label>
+        </div>
+        <div>
+          <label>Select the vehicle you own</label>
+          <input type="checkbox" id="Car" name="vehicle" value="Car" />
+          <label>Car</label>
+          <input type="checkbox" id="Bike" name="vehicle" value="Bike" />
+          <label>Bike</label>
+          <input type="checkbox" id="Cycle" name="vehicle" value="Cycle" />
+          <label>Cycle</label>
+        </div>
+        <div>
+          <label for="carBrand">Choose the car brand you own:</label>
+          <select id="carBrand" name="carBrand">
+            <option value="Suzuki">Suzuki</option>
+            <option value="BMW">BMW</option>
+            <option value="Fiat">Fiat</option>
+          </select>
+        </div>
+        <button type="submit">Submit form</button>
+      </form>
+    </main>
 
     <footer>Copyright &copy; 2024</footer>
   </body>
